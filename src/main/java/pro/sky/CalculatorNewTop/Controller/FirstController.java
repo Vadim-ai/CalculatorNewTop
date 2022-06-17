@@ -23,22 +23,22 @@ public class FirstController {
 
     @GetMapping("/plus")
     public String plus (@RequestParam int num1, @RequestParam int num2){
-        return service.plus (num1, num2);
+        return num1 + "+" + num2 + "=" + service.plus (num1, num2);
     }
 
     @GetMapping("/minus")
     public String minus (@RequestParam int num1, @RequestParam int num2){
-        return service.minus (num1, num2);
+        return num1 + "-" + num2 + "=" + service.minus (num1, num2);
     }
 
     @GetMapping("/multiply")
     public String multiply (@RequestParam int num1, @RequestParam int num2){
-        return service.multiply (num1, num2);
+        return num1 + "*" + num2 + "=" + service.multiply (num1, num2);
     }
 
     @GetMapping("/divide")
     public String divide (@RequestParam int num1, @RequestParam int num2){
-        return service.divide (num1, num2);
+        return num1 + "/" + num2 + "=" + service.divide (num1, num2);
     }
 
 }
