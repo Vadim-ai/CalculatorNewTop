@@ -1,4 +1,4 @@
-package pro.sky.CalculatorNewTop.Service;
+package pro.sky.CalculatorNewTop.service;
 
 public interface Service {
     String greeting();

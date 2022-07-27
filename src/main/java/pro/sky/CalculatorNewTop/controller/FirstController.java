@@ -1,10 +1,10 @@
-package pro.sky.CalculatorNewTop.Controller;
+package pro.sky.CalculatorNewTop.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pro.sky.CalculatorNewTop.Service.Service;
+import pro.sky.CalculatorNewTop.service.Service;
 
 @RestController
 @RequestMapping("/calculator")

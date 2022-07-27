@@ -1,4 +1,4 @@
-package pro.sky.CalculatorNewTop.Service;
+package pro.sky.CalculatorNewTop.service;
 
 @org.springframework.stereotype.Service
 public class ServiceImpl implements Service {
@@ -15,8 +15,11 @@ public class ServiceImpl implements Service {
     public int multiply (int num1, int num2){
         return num1 * num2;
     }
-    public int divide (int num1, int num2){
-        return num1 / num2;
+    public int divide (int num1, int num2) {
+        if (num2 == 0) {
+            throw new IllegalArgumentException("Делить на 0 нельзя");
+        } else {
+            return num1 / num2;
+        }
     }
-
 }
